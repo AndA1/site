@@ -4,12 +4,12 @@
     <meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	  <link rel="shortcut icon" href="image/logo1.png" type="image/png">
-    <title>Благотворительный фонд святого преподобного Силуана Афонского</title>
+	<link rel="shortcut icon" href="image/logo1.png" type="image/png">
    
+	 <title>Благотворительный фонд святого преподобного Силуана Афонского</title>
+
 	<link href="css/style.css" rel="stylesheet">
 	<link href="css/bootstrap-4.0.0.css" rel="stylesheet">
-	
 </head>
 <body>
 	
@@ -21,7 +21,7 @@
     		<span class="navbar-toggler-icon"></span>
   		</button>
   		<div class="collapse navbar-collapse" id="navbarNavDropdown">
-    		<ul class="nav navbar-nav navbar-right">
+   		  <ul class="nav navbar-nav navbar-right center-nav">
       			<li class="nav-item">
         			<a class="nav-link" href="#">Главная</a>
       			</li>
@@ -44,7 +44,7 @@
         			<a class="nav-link" href="#">Новости</a>
       			</li>
 				<li class="nav-item">
-        			<a class="nav-link active" href="#">Контакты</a>
+					<a class="nav-link active" href="#">Контакты</a>
       			</li>
     		</ul>
   		</div>
@@ -54,41 +54,49 @@
 <div><br></div>
 		<div id="logo">
 			<img src="image/logo.png" alt="Благотворительный фонд святого преподобного Силуана Афонского" class="rounded img-fluid" href="#">	
+		<nav class="center-nav">
+    		<tv>НУЖНА ПОМОЩЬ</tv>
+			<tv>СТАТЬ ВОЛОНТЕРОМ</tv>
+			<tv>СДЕЛАТЬ ДОБРОЕ ДЕЛО</tv>
+		</nav>
 		</div>
-	<nav class="center-nav">
-    	<tv>НУЖНА ПОМОЩЬ</tv>
-		<tv>СТАТЬ ВОЛОНТЕРОМ</tv>
-		<tv>СДЕЛАТЬ ДОБРОЕ ДЕЛО</tv>
-	</nav>
-
 </header>
 	<br>
 <map>
-	<section class="map">
-		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab03db56eacf591c332b803e20586a62b1ac86a795ecd804e421d80ffdf9edf8e&amp;width=940&amp;height=304&amp;lang=ru_RU&amp;scroll=true"></script>
-	</section>		
+	<div class="row-fluid card-body" id="MainMap">
+		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab03db56eacf591c332b803e20586a62b1ac86a795ecd804e421d80ffdf9edf8e&amp;lang=ru_RU&amp;scroll=true"></script>
+		<script type="text/javascript">
+			ymaps.ready(function() {
+				var MainMap = new ymaps.Map("MainMap", {
+					center:[51.671439, 39.203243],
+					zoom: 10,
+					type:"yandex#map"
+				});
+				MainMap.controls.add("typeSelector").add("zoomControl");
+			});		
+		</script>
+	</div>		
 </map>
-	
+<hr>	
 <aside>
 	<div class="recvit">
-		<p>Реквизиты фонда</p>
-		<p>"Фонд св. преп. Силуана Афонского"</p>
-		<p>Номер счета: </p>
-		<p>40703810513000001134</p>
-		<p>Банк получателя: </p>
-		<p>ЦЕНТРАЛЬНО-ЧЕРНОЗЕМНЫЙ БАНК ПАО СБЕРБАНК</p>
-		<p>БИК: </p>
-		<p>042007681</p>
-		<p>Кор. счет: </p>
-		<p>30101810600000000681</p>
-		<p>ИНН: </p>
-		<p>3664238750</p>
-		<p>ОГРН: </p>
-		<p>1183600000924</p>
-		<p>КПП: </p>
-		<p>366401001</p>
-		<p>скачать реквизиты</p>
-		
+		<h1 style="font-size: 25px">Реквизиты фонда</h1>
+		<p style="font-size: 12px; line-height: 19px">"Фонд св. преп. Силуана Афонского"</p>
+		<p style="font-size: 10.125px; line-height: 16px">Номер счета: </p>
+		<p style="font-size: 12px; line-height: 19px">40703810513000001134</p>
+		<p style="font-size: 10.125px; line-height: 16px">Банк получателя: </p>
+		<p style="font-size: 12px; line-height: 19px">ЦЕНТРАЛЬНО-ЧЕРНОЗЕМНЫЙ БАНК<br> ПАО СБЕРБАНК</p>
+		<p style="font-size: 10.125px; line-height: 16px">БИК: </p>
+		<p style="font-size: 12px; line-height: 19px">042007681</p>
+		<p style="font-size: 10.125px; line-height: 16px">Кор. счет: </p>
+		<p style="font-size: 12px; line-height: 19px">30101810600000000681</p>
+		<p style="font-size: 10.125px; line-height: 16px">ИНН: </p>
+		<p style="font-size: 12px; line-height: 19px">3664238750</p>
+		<p style="font-size: 10.125px; line-height: 16px">ОГРН: </p>
+		<p style="font-size: 12px; line-height: 19px">1183600000924</p>
+		<p style="font-size: 10.125px; line-height: 16px">КПП: </p>
+		<p style="font-size: 12px; line-height: 19px">366401001</p>
+		<p>скачать реквизиты</p>	
 	</div>
 </aside>
 	
@@ -137,33 +145,40 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-3">
-                    <h2 class="logo"><a href="#"> LOGO </a></h2>
+                    <img class="footer-logo" src="image/logo-footer.png" href=" #" alt=" ">
+					<div class="footer-copyright">
+						<br><br>
+						<a class="footer-conf" href="#">Политика конфеденциальности</a><br>
+						<a class="footer-personal" href="#">Согласие на обработку персональных данных </a>
+       				</div>
                 </div>
-                <div class="col-sm-2">
-                    <h5>Get started</h5>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Sign up</a></li>
-                        <li><a href="#">Downloads</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-2">
-                    <h5>About us</h5>
-                    <ul>
-                        <li><a href="#">Company Information</a></li>
-                        <li><a href="#">Contact us</a></li>
-                        <li><a href="#">Reviews</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-2">
-                    <h5>Support</h5>
-                    <ul>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Help desk</a></li>
-                        <li><a href="#">Forums</a></li>
-                    </ul>
-                </div>
+				
+				
                 <div class="col-sm-3">
+                    
+                    <ul>
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">О фронде</a></li>
+                        <li><a href="#">Нужна помощь</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2 no-gutters">
+                    
+                    <ul>
+                        <li><a href="#">Помогли</a></li>
+                        <li><a href="#">Друзья</a></li>
+                        <li><a href="#">Отчеты</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2 no-gutters">
+                    
+                    <ul>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="col-sm-2">
                     <div class="social-networks">
                         <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
                         <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
@@ -173,9 +188,7 @@
                 </div>
             </div>
         </div>
-        <div class="footer-copyright">
-            <p>© 2016 Copyright Text </p>
-        </div>
+        
     </footer>		
 	  
 	  
