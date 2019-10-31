@@ -6,16 +6,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="image/logo1.png" type="image/png">
    
-	 <title>Благотворительный фонд святого преподобного Силуана Афонского</title>
+	<title>Благотворительный фонд святого преподобного Силуана Афонского</title>
 
 	<link href="css/style.css" rel="stylesheet">
 	<link href="css/bootstrap-4.0.0.css" rel="stylesheet">
-	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 	
 <header>
-	
+	<!-- Первое меню-->
 	<div class="top-nav">
 		<nav class="navbar navbar-expand-lg navbar-light bg-white">
 		<a class="navbar-brand" href="#"></a>
@@ -23,198 +23,189 @@
     		<span class="navbar-toggler-icon"></span>
   		</button>
   		<div class="collapse navbar-collapse" id="navbarNavDropdown">
-   		  <ul class="nav navbar-nav navbar-right center-nav mx-auto">
-      			<li class="nav-item">
-        			<a class="nav-link" href="#">Главная</a>
-      			</li>
-      			<li class="nav-item">
-        			<a class="nav-link" href="#">О Фонде</a>
-      			</li>
-				<li class="nav-item">
-        			<a class="nav-link" href="#">Нужна помощь</a>
-      			</li>
-				<li class="nav-item">
-        			<a class="nav-link" href="#">Помогли</a>
-      			</li>
-				<li class="nav-item">
-        			<a class="nav-link" href="#">Друзья</a>
-      			</li>
-				<li class="nav-item">
-        			<a class="nav-link" href="#">Отчеты</a>
-      			</li>
-				<li class="nav-item news">
-        			<a class="nav-link" href="#">Новости</a>
-      			</li>
-				<li class="nav-item">
-					<a class="nav-link active" href="#">Контакты</a>
-      			</li>
-    		</ul>
+ 		<ul class="nav navbar-nav navbar-right center-nav mx-auto">
+      		<li class="nav-item">
+        		<a class="nav-link" href="#">Главная</a>
+      		</li>
+      		<li class="nav-item">
+        		<a class="nav-link" href="#">О Фонде</a>
+      		</li>
+			<li class="nav-item">
+        		<a class="nav-link" href="#">Нужна помощь</a>
+      		</li>
+			<li class="nav-item">
+        		<a class="nav-link" href="#">Помогли</a>
+      		</li>
+			<li class="nav-item">
+        		<a class="nav-link" href="#">Друзья</a>
+      		</li>
+			<li class="nav-item">
+        		<a class="nav-link" href="#">Отчеты</a>
+      		</li>
+			<li class="nav-item news">
+        		<a class="nav-link" href="#">Новости</a>
+      		</li>
+			<li class="nav-item">
+				<a class="nav-link active" href="#">Контакты</a>
+      		</li>
+		</ul>
   		</div>
-	  </nav>
-	
+	  	</nav>
 	<br>
-<div><br></div>
+	<div><br></div>
+		<!-- Второе меню с логотипом-->
 		<div id="logo">
 			<img src="image/logo.png" alt="Благотворительный фонд святого преподобного Силуана Афонского" class="rounded img-fluid" href="#">	
 			<a class="help" href="#">НУЖНА ПОМОЩЬ</a>
 			<a class="can_volontr" href="#">СТАТЬ ВОЛОНТЕРОМ</a> 
-			<a class="good_deed" href="#"><button class="btn btn-danger img_top" type="submit" style="background: #E20613"><i class="material-icons mdi mdi-message-outline"></i>сделать доброе дело <img src="image/logo-bottom.png" class="img_top_logo"></button></a>
+			<a class="good_deed" href="#"><button class="img_top" type="submit" href="#"> &nbsp; сделать доброе дело<img src="image/logo-menu.png" class="img_top_logo"></button></a>
 		</div>
 	</div>
 </header>
 	<br>
-<map>
 	
+	
+	<!--Карта --> 
+<map>
 	<div class="row-fluid card-body" id="MainMap">
 		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab03db56eacf591c332b803e20586a62b1ac86a795ecd804e421d80ffdf9edf8e&amp;lang=ru_RU&amp;scroll=true"></script>
-		<script type="text/javascript">
-			ymaps.ready(function() {
-				var MainMap = new ymaps.Map("MainMap", {
-					center:[51.671439, 39.203243],
-					zoom: 10,
-					type:"yandex#map"
-				});
-				MainMap.controls.add("typeSelector").add("zoomControl");
-			});		
-		</script>
 	</div>
-	
 </map>
-
 	
-
-	
+	<!-- Наши контакты -->
 <section>
-	
-		<div class="row">
-			<main class="col-md-8 col-lg-9">
-				<div class="our_contacts">
-					<h1>наши контакты</h1>
-						<div class="contacts">
-							<div class="row">
-    							<div class="col-sm">
-									<p class="adress">адрес</p>
-									<p style="font-size: 25px;">г. Воронеж</p>
-									<p>ул. Коммисаржевской, 10, офис 123</p>
-    							</div>
-    							<div class="col-sm">
-									<p class="call">телефон</p>
-									<p style="font-size: 30px">+7 650 106 57 31</p>
-    							</div>
-    							<div class="col-sm">
-									<p class="email">e-mail</p>
-									<p style="font-size: 19px">76501065731@yandex.ru</p>
-    							</div>
-  							</div>
-						</div>
-					</div>	
-					<div class="partne volunteer">
+	<div class="row">
+		<main class="col-md-8 col-lg-9">
+			<div class="our_contacts">
+				<h1 style="font-weight: 200;">наши контакты</h1>
+					<div class="contacts">
 						<div class="row">
-							<div class="col-sm">
-								<h1>Для партнеров</h1>
+   							<div class="col-sm-4 col-xl-4">
+								<p class="adress">адрес</p>
+								<p class="adress_p" >г. Воронеж</p>
+								<p class="adress_p2">ул. Коммисаржевской, 10, офис 123</p>
+   							</div>
+   							<div class="col-sm-4">
 								<p class="call">телефон</p>
-								<p style="font-size: 30px; ">+7 650 106 57 31</p>
-								<p class="email" classe="email">e-mail</p>
-								<p style="font-size: 19px">76501065731@yandex.ru</p>
-							</div>
-							<div class="col-sm">	
-								<h1>Для волонтеров</h1>
-								<p class="wrine_our">напишите нам</p>
-							  <p>Мы всегда рады новым помощникам!<br> Напишите нам и с вами свяжется наш<br> координатор волонтеров.</p> 
-								<div class="wow animated fadeInRight col-xl-12 col-lg-11 col-md-12" data-wow-delay=".2s">
-                  <form class="shake" role="form" method="post" id="contactForm" name="contact-form" data-toggle="validator">
-                      
-                      <div class="form-group label-floating">
-                        <label class="control-label" for="name"></label>
-                        <input class="form-control" id="name" type="text" name="name" required data-error="Please enter your name" placeholder="Ваше Имя">
-                        <div class="help-block with-errors"></div>
-                      </div>
-                      
-                      <div class="form-group label-floating">
-                        <label class="control-label" for="email"></label>
-                        <input class="form-control" id="email" type="email" name="email" required data-error="Please enter your Email" placeholder="Ваш e-mail">
-                        <div class="help-block with-errors"></div>
-                      </div>
-                      
-                      <div class="form-group label-floating">
-                        <label class="control-label"></label>
-                        <input class="form-control" id="msg_subject" type="text" name="phone" required data-error="Please enter your phone" placeholder="Контактный телефон">
-                        <div class="help-block with-errors"></div>
-                      </div>
-                      
-                      <div class="form-group label-floating">
-                          <label for="message" class="control-label"></label>
-                          <textarea class="form-control" rows="3" id="message" name="message" required data-error="Write your message" placeholder="Ваше сообщение"></textarea>
-                          <div class="help-block with-errors"></div>
-                      </div>
-				    <label class="container"><input type="checkbox" checked="checked">
-			        <span class="checkmark"></span><em>Согласие на обработку персональных данных</em></label>
-                      
-                      <div class="form-submit mt-5 offset-xl-2 col-lg-9 col-xl-10 col-md-8 col-9 offset-1 offset-lg-1 offset-md-0">                          
-						  <button class="btn btn-danger btn-lg img_bottom" type="submit" style="background: #E20613">Стать волонтером <img src="image/logo-bottom.png" align="right" ></button>
-
-                          <div id="msgSubmit" class="h3 text-center hidden"></div>
-                          <div class="clearfix"></div>
-                      </div>
-                  </form>
-              </div>												
-				</div>
+								<p class="call_p">+7 650 106 57 31</p>
+   							</div>
+							<br>
+   							<div class="col-sm-4">
+								<p class="email">e-mail</p>
+								<p class="email_p">76501065731@yandex.ru</p>
+   							</div>
 						</div>
 					</div>
-			</main>
-			<div class="col-md-4 col-lg-3">
-        		<div class="row">
-				<aside class="col-md-12 col-sm-8 offset-sm-3 offset-xl-0 offset-lg-0 offset-md-0">	
-				<div class="recvit" >
+				</div>	
+				<br>
+				<br>
+				<br>
+				<br>
+				<div class="partne volunteer">
+					<div class="row">
+						<div class="col-sm-4 col-lg-5 col-md-5">
+							<h1 style="font-weight: 200">Для партнеров</h1>
+							<br>
+							<p class="call">телефон</p>
+							<p class="call_p2">+7 650 106 57 31</p>
+							<br>
+							<p class="email">e-mail</p>
+							<p class="email_p2">76501065731@yandex.ru</p>
+						</div>
+						<div class="col-sm-6 col-xl-6 col-lg-7 col-md-7 offset-md-0">	
+							<h1 style="font-weight: 200">Для волонтеров</h1>
+							<br>
+							<p class="wrine_our">напишите нам</p>
+							<p>Мы всегда рады новым помощникам!<br> Напишите нам и с вами свяжется наш<br> координатор волонтеров.</p> 
+							<div class="wow animated fadeInRight col-xl-12 col-lg-12 col-md-12" data-wow-delay=".2s">
+			                	<form class="shake" role="form" method="post" id="contactForm" name="contact-form" data-toggle="validator">
+								<div class="form-group label-floating">
+									<label class="control-label" for="name"></label>
+									<input class="form-control" id="name" type="text" name="name" required data-error="Please enter your name" placeholder="Ваше Имя">
+                        			<div class="help-block with-errors"></div>
+                      			</div>
+								<div class="form-group label-floating">
+									<label class="control-label"></label>
+									<input class="form-control" id="msg_subject" type="text" name="phone" required data-error="Please enter your phone" placeholder="Контактный телефон">
+									<div class="help-block with-errors"></div>
+                      			</div>
+								<div class="form-group label-floating">
+                        			<label class="control-label" for="email"></label>
+                        			<input class="form-control" id="email" type="email" name="email" required data-error="Please enter your Email" placeholder="Ваш e-mail">
+                        			<div class="help-block with-errors"></div>
+                      			</div>                    
+                      			<div class="form-group label-floating">
+                         	 		<label for="message" class="control-label"></label>
+                          			<textarea class="form-control" rows="3" id="message" name="message" required data-error="Write your message" placeholder="Ваше сообщение"></textarea>
+                          			<div class="help-block with-errors"></div>
+                      			</div>
+					  			<hr style="width: 70px;position: relative; left: -156px; background: #F4CE77; border-radius: 1px;">
+				    				<label class="container"><input type="checkbox" checked="checked">
+			        				<span class="checkmark"></span><em>Согласие на обработку персональных данных</em></label>
+								<div class="form-submit mt-5 offset-xl-2 col-lg-9 col-xl-10 col-md-8 col-9 offset-1 offset-lg-1 offset-md-0"> 
+									<button class="btn btn-danger btn-sm img_bottom custom1" type="submit" align="center" style="background: #E20613;"><a style="font-syze:14px">Стать волонтером</a> <img src="image/logo-bottom.png" align="right" ></button>
+                          			<div id="msgSubmit" class="h3 text-center hidden"></div>
+                          			<div class="clearfix"></div>
+                      			</div>
+                  				</form>
+              				</div>												
+						</div>
+					</div>
+				</div>
+		</main>
+		
+		<!-- Реквизиты фонда -->
+		<div class="col-md-4 col-lg-3">
+        	<div class="row">
+			<aside class="offset-sm-3 offset-xl-0 offset-lg-0 col-xl-10 col-md-10 col-sm-5 col-lg-11 offset-md-1">	
+				<div class="recvit" style="text-align: left;" >
 					<hr style="width: 70px; position: relative; left: -70px; background: #F4CE77; border-radius: 1px; ">
-					<h1 style="font-size: 25px">Реквизиты фонда</h1>
-					<p style="font-size: 12px; line-height: 19px">"Фонд св. преп. Силуана Афонского"</p>
-					<p style="font-size: 12px; line-height: 16px">Номер счета: 
-					<br>40703810513000001134</p>
-					<p style="font-size: 12px; line-height: 16px">Банк получателя: 
-					<br>ЦЕНТРАЛЬНО-ЧЕРНОЗЕМНЫЙ БАНК<br> ПАО СБЕРБАНК</p>
+					<h1 class="recvit_h1">Реквизиты фонда</h1>
+					<p class="fonj_p" style="font-size: 11px; line-height: 19px">"Фонд св. преп. Силуана Афонского"</p>
+					<p style="font-size: 10px; line-height: 16px">Номер счета: 
+					<br><sub style="font-size: 14px; ">40703810513000001134</sub></p>
+					<p style="font-size: 11px; line-height: 16px">Банк получателя: 
+					<br><sub style="font-size:12px; letter-spacing: -0.5px">ЦЕНТРАЛЬНО-ЧЕРНОЗЕМНЫЙ БАНК<br> ПАО СБЕРБАНК</sub></p>
 					<p style="font-size: 12px; line-height: 16px">БИК: 
-					<br>042007681</p>
+					<br><sub style="font-size: 15px">042007681</sub></p>
 					<p style="font-size: 12px; line-height: 16px">Кор. счет:
-					<br>30101810600000000681</p>
+					<br><sub style="font-size:15px ">30101810600000000681</sub></p>
 					<p style="font-size: 12px; line-height: 16px">ИНН:
-					<br>3664238750</p>
+					<br><sub style="font-size: 15px">3664238750</sub></p>
 					<p style="font-size: 12px; line-height: 16px">ОГРН:
-					<br>1183600000924</p>
+					<br><sub style="font-size: 15px">1183600000924</sub></p>
 					<p style="font-size: 12px; line-height: 16px">КПП: 
-					<br>366401001</p>
-					<a class="download_recvit" href="#"><button class="btn btn-outline-danger img_aside" type="submit"><i class="material-icons mdi mdi-message-outline"></i>Cкачать реквизиты <img src="image/logo-aside.png"></button></a>	
+					<br><sub style="font-size: 15px">366401001</sub></p>
+					<a class="download_recvit" href="#"><button class="btn btn-outline-danger btn-sm custom img_aside" type="submit" href="#"><sub>&nbsp;  &nbsp;Cкачать реквизиты<img src="image/logo-aside.png"></sub></button></a>	
 				</div>
 			</aside>
-				<div class="row">
-				</div>
-				</div>
+			<div class="row"></div>
 			</div>
 		</div>
-	
+	</div>
 </section>
 
-	
+<!--  Шапка  -->	
 <footer>
 	<div class="footer-classic context-dark bg-image" style="background: #F6F6F6; color:#4C4C4C">
         <div class="container-fluid">
-          <div class="row row-40 ">
+         <div class="row row-40 ">
             <div class="col-xl-5 offset-lg-0 col-lg-5 offset-sm-3 col-sm-7 offset-md-0 col-md-6 col-10 offset-1">
               <div class="pr-xl-2"><a class="brand" href="index.html"><img class="brand-logo-light" src="image/logo-footer.png" alt="" style="position:relative; margin: 0px 15px; top:35px"></a>
                 <p class="offset-sm-0 col-sm-12 col-xl-1"><br><br><br></p>
-             
-				  <a class="rights" href="#" style="margin: 0 25px; font-size: 13px">Политика конфеденциальности</a><br>
-
+				<a class="rights" href="#" style="margin: 0 25px; font-size: 13px">Политика конфеденциальности</a><br>
 				<a  class="rights" href="#" style="margin: 0 25px; font-size: 13px">Согласие на обработку персональных данных</a>
               </div>
             </div>
+			  
             <div class="col-md-1 col-xl-1 col-lg-1 align-self-center" >
-				<ul class="nav-list">
+				<ul class="nav-list ">
                 	<li><a href="#">Главная</a></li>
 					<li><a href="#">О фонде</a></li>
 					<li><a href="#">Нужна помощь</a></li>
 				</ul>
             </div>
+			  
             <div class="col-md-1 col-xl-1 col-lg-1 align-self-center" >
               <ul class="nav-list">
                 <li class="col-lg-12"><a href="#">Помогли</a></li>
@@ -222,32 +213,31 @@
                 <li class="col-lg-12"><a href="#">Отчеты</a></li>
               </ul>
             </div>
-				<div class="col-md-1 col-xl-1 col-lg-1 align-self-center">
-					<ul class="nav-list">
-						<li><a href="#">Новости</a></li>
-						<li><a href="#">Контакты</a></li>
-					</ul>
-          </div>
-			  <div class="col-xl-4 col-lg-4 col-md-3">
-				  <p style="font-size: 25px; margin-right: "><i class="fa fa-phone-square fa-lg" href="#"> </i>+7 650 106 57 31</p>
+			  
+			<div class="col-md-1 col-xl-1 col-lg-1 align-self-center">
+				<ul class="nav-list">
+					<li><a href="#">Новости</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</div>
+			
+			<div class="col-xl-4 col-lg-4 col-md-3">
+			  <p style="font-size: 25px; margin-right: "><i class="fa fa-phone-square fa-lg" href="#"> </i>+7 650 106 57 31</p>
 			  <p><i class="fa fa-map-marker fa-lg" href="#"> </i>г.Воронеж, Московский пр-т, 67 оф.307</p>
-				  <hr style="width: 150px; position: relative; background: #F4CE77; border-radius: 1px;">
-				  <div class="btn-group col-xl-4 offset-xl-8">
-						<i class="fa fa-instagram fa-2x" href="#"></i>
-					  	<i class="fa fa-facebook fa-2x" href="#"></i>
-					  	<i class="fa fa-vk fa-2x" href="#"></i>
-				   
+			  <hr style="width: 150px; position: relative; background: #F4CE77; border-radius: 1px;">
+			  <div class="btn-group col-xl-4 offset-xl-8 col-sm-3 offset-sm-9 offset-md-3 offset-lg-7 col-4 offset-7">
+					<i class="fa fa-instagram fa-2x" href="#"></i>
+				  	<i class="fa fa-facebook fa-2x" href="#"></i>
+				  	<i class="fa fa-vk fa-2x" href="#"></i>   
 			  </div>
-        </div>
-        
+        	</div>
+          </div>
+		</div>
 	</div>
-	</div>
-	</div>
-		</footer>
-<br>
+</footer>
 	
 	
-
+<!-- JavaScript -->
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/popper.min.js"></script> 
 	<script src="js/bootstrap-4.0.0.js"></script>

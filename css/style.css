@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Rubik:500,700|Roboto:400,600");
+
 header, section, map, #MainMap, .brand-logo-light{
 	margin: 0 42px;
 }
@@ -15,7 +16,11 @@ bady{
 	text-align: center;
 	font-size: 14px;
 }
-
+@media screen and (max-width: 1247px) {
+     #logo a{
+        margin-right: auto;
+	}
+}
 @media screen and (max-width: 1206px) {
      #logo a{
         margin-right: auto;
@@ -50,6 +55,11 @@ bady{
         margin-right: auto;
 	}
 }
+@media screen and (max-width: 1061px) {
+     #logo a{
+        margin: 0 auto;
+	}
+}
 @media screen and (max-width: 1042px) {
      #logo a{
         margin: 0 auto;
@@ -61,16 +71,16 @@ bady{
 	}
 }
 
-@media screen and (max-width: 955px) {
-     #logo a{
-        margin: 0 auto;
-		 font-size: 12px;
-	}
-}
-@media screen and (max-width: 930px) {
+@media screen and (max-width: 942px) {
      #logo a{
         margin: 0 auto;
 		 font-size: 11px;
+	}
+}
+@media screen and (max-width: 920px) {
+     #logo a{
+        margin: 0 auto;
+		 font-size: 10px;
 	}
 }
 
@@ -141,6 +151,21 @@ bady{
 
 }
 
+.img_top{
+	 background-color: #E20613;
+	border: none;
+	color:#FFFFFF;
+	padding: 1px 3px;
+	text-align: center;
+	text-decoration: none;
+    display: inline-block;
+	cursor:auto;
+}
+.img_top:hover{
+	box-shadow: 0 10px 10px 0 rgba(226,6,19,0.2), 0 10px 10px 0 rgba(226,6,19, 0.2);
+	text-decoration: overline #E20613;
+}
+
 #logo {	
 	no-repeat: no-repeat;
 	left: 42px;
@@ -155,10 +180,41 @@ aside{
 	width:238px;
 	background-color:#FFFFFF;	
 }
+
+.img_aside{
+	background-color: #FFFFFF;
+	border-bottom: 1px solid #CA030F;
+	border-top: 1px solid #CA030F;
+	border-left: 1px solid #CA030F;
+	border-right: none;
+	color:#CA030F;
+	padding: 0px 0px 0 0px;
+	text-decoration: none;
+    display: inline-block;
+	cursor:auto;
+	
+}
+.img_aside img{
+	left: 32px;
+	top:-8px;
+	
+}
+
+.img_aside sub{
+	font-size: 16px;
+}
+
+
+
 .recvit{
 	border: 1px solid #979797;
 	box-sizing: border-box;
 	border-radius: 2px;
+	padding: 10px;
+}
+
+.recvit_h1{
+	font-size: 23px;
 }
 
 
@@ -167,8 +223,18 @@ aside{
 	height: 32px;
 }
 
-
-
+.custom{
+	width:200px !important;
+	height: 36px;
+	margin-bottom: 6px;
+}
+@media (max-width:1000px){
+	.img_aside img {
+		width: auto;
+		height: auto;
+		margin-bottom: auto;
+	}
+}
 
 #MainMap {
 	width: 95%;
@@ -392,6 +458,15 @@ aside{
   transform: rotate(45deg);
 }
 
+.custom1{
+	width:200px !important;
+	height: 44.5px;
+	margin-bottom: 6px;
+}
+.custom1 img{
+	top:-5px;
+}
+
 .footer-classic a, .footer-classic a:focus, .footer-classic a:active {
     color: #4C4C4C;
 }
@@ -460,7 +535,7 @@ ul, ol {
 
 .img_aside img{
 	position: relative;
-	left: 45px;
+	left: 30px;
 	height: 35px;
 }
 
@@ -468,4 +543,65 @@ footer p{
 	text-align: right;
 }
 
+#name{
+	border-left:none;
+	border-right: none;
+	border-top: none;
+}
+#message{
+	border-left: none;
+	border-right: none;
+}
+#msg_subject{
+	border-left:none;
+	border-right: none;
+	border-top: none;
+}
+#email {
+	border-left:none;
+	border-right: none;
+	border-top: none;
+}
 
+
+
+.call_p {
+	font-size: 30px;
+}
+.call_p2{
+	font-size: 30px;
+}
+.email_p {
+	font-size: 19px;
+}
+.email_p2{
+	font-size: 19px;
+}
+.adress_p {
+	font-size: 25px;
+}
+.adress_p2 {
+	font-size: 16px
+}
+
+@media screen and (max-width: 1120px) {
+    .call_p {
+        font-size: 20px;
+    }
+	.call_p2{
+		font-size:20px;
+	}
+	.email_p, .email_p2{
+		font-size: 18px;
+	}	
+}
+@media screen and (max-width: 950px) {
+	.email_p{
+		font-size: 15px;
+	}
+}
+@media screen and (max-width: 901px) {
+	.call_p, .call_p2{
+		font-size: 17px;
+	}
+}
