@@ -16,25 +16,38 @@ bady{
 	font-size: 14px;
 }
 
+@media screen and (max-width: 1206px) {
+     #logo a{
+        margin-right: auto;
+	}
+}
 
 @media screen and (max-width: 1164px) {
      #logo a{
-        margin-right: 40px;
+        margin-right: auto;
 	}
 }
+
+@media screen and (max-width: 1157px) {
+     #logo a{
+        margin-right: auto;
+		 font-size: 12px;
+	}
+}
+
 @media screen and (max-width: 1132px) {
      #logo a{
-        margin-right: 30px;
+        margin-right: auto;
 	}
 }
 @media screen and (max-width: 1103px) {
      #logo a{
-        margin-right: 20px;
+        margin-right: auto;
 	}
 }
 @media screen and (max-width: 1073px) {
      #logo a{
-        margin-right: 10px;
+        margin-right: auto;
 	}
 }
 @media screen and (max-width: 1042px) {
@@ -54,6 +67,26 @@ bady{
 		 font-size: 12px;
 	}
 }
+@media screen and (max-width: 930px) {
+     #logo a{
+        margin: 0 auto;
+		 font-size: 11px;
+	}
+}
+
+@media screen and (max-width: 901px) {
+     #logo a{
+        margin: 0 auto;
+		 font-size: 9px;
+	}
+}
+
+@media screen and (max-width: 846px) {
+     #logo a{
+        margin: 0 auto;
+		 font-size: 8px;
+	}
+}
 
 @media screen and (max-width: 836px) {
      #logo a{
@@ -67,14 +100,6 @@ bady{
 		margin: auto;
 	}
 }
-
-
-@media screen and (max-width: 781px) {
-    #logo {
-       
-    }
-}
-
 
 .help{
 	margin-left: 120px;
@@ -259,7 +284,38 @@ aside{
 	}
 }
 
-
+.adress{
+	border-bottom: 1px solid #F4CE77;
+	border-width:2px;
+	border-radius: 1px;
+	padding:0 0;
+	padding-top: 6px;
+	width: 60px;
+}
+.call{
+	border-bottom: 1px solid #F4CE77;
+	border-width:2px;
+	border-radius: 1px;
+	padding:0 0;
+	padding-top: 6px;
+	width: 60px;
+}
+.email{
+	border-bottom: 1px solid #F4CE77;
+	border-width:2px;
+	border-radius: 1px;
+	padding:0 0;
+	padding-top: 6px;
+	width: 60px;
+}
+.wrine_our{
+	border-bottom: 1px solid #F4CE77;
+	border-width:2px;
+	border-radius: 1px;
+	padding:0 0;
+	padding-top: 6px;
+	width: 150px;
+}
 
 .footer-classic a, .footer-classic a:focus, .footer-classic a:active {
     color: #4C4C4C;
@@ -310,16 +366,21 @@ ul, ol {
 	color:#F4CE77;
 	letter-spacing: 15px
 }
-button img{
-	position: absolute;
-	right: 60px;
-	top: -1px; 
-	height: 49px;
+.img_top img{
+	position: relative;
+	height: 30px;
+	left: 25px
 }
-@media screen and (max-width: 1255px) {
-    button img {
-        margin: auto;
-		right: auto;
-    }
 
+.img_bottom img{
+	position: relative;
+	height: 45px;
+	left: 45px;
 }
+
+.img_aside img{
+	position: relative;
+	left: 45px;
+	height: 35px;
+}
+
