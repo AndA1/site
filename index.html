@@ -58,7 +58,7 @@
 			<img src="image/logo.png" alt="Благотворительный фонд святого преподобного Силуана Афонского" class="rounded img-fluid" href="#">	
 			<a class="help" href="#">НУЖНА ПОМОЩЬ</a>
 			<a class="can_volontr" href="#">СТАТЬ ВОЛОНТЕРОМ</a> 
-			<a class="good_deed" href="#">сделать доброе дело</a>
+			<a class="good_deed" href="#"><button class="btn btn-danger" type="submit" id="form-submit"><i class="material-icons mdi mdi-message-outline"></i>сделать доброе дело</button></a>
 		</div>
 	</div>
 </header>
@@ -93,17 +93,17 @@
 						<div class="contacts">
 							<div class="row">
     							<div class="col-sm">
-      								адрес
-									г. Воронеж
-									ул. Коммисаржевской, 10, офис 123
+									<p class="adress">адрес</p>
+									<p>г. Воронеж</p>
+									<p>ул. Коммисаржевской, 10, офис 123</p>
     							</div>
     							<div class="col-sm">
-      								телефон
-									+7 650 106 57 31
+									<p class="call">телефон</p>
+									<p>+7 650 106 57 31</p>
     							</div>
     							<div class="col-sm">
-      								e-mail
-									76501065731@yandex.ru
+									<p class="email">e-mail</p>
+									<p>76501065731@yandex.ru</p>
     							</div>
   							</div>
 						</div>
@@ -112,32 +112,61 @@
 						<div class="row">
 							<div class="col-sm">
 								<h1>Для партнеров</h1>
-								<p>телефон</p>
-								
-								+7 650 106 57 31
-								e-mail
-								76501065731@yandex.ru
+								<p class="call">телефон</p>
+								<p>+7 650 106 57 31</p>
+								<p classe="email">e-mail</p>
+								<p>76501065731@yandex.ru</p>
 							</div>
 							<div class="col-sm">	
 								<h1>Для волонтеров</h1>
-								напишите нам
-								Мы всегда рады новым помощникам! Напишите нам и с вами свяжется наш координатор волонтеров. 
-								Ваше Имя
-								Контактный телефон
-								Ваш e-mail
-								Ваш сообщение
-								<label class="container">Согласие на обработку персональных данных 
+								<p class="wrine_our">напишите нам</p>
+							  <p>Мы всегда рады новым помощникам!<br> Напишите нам и с вами свяжется наш<br> координатор волонтеров.</p> 
+								<div class="wow animated fadeInRight col-xl-12 col-lg-11 col-md-12" data-wow-delay=".2s">
+                  <form class="shake" role="form" method="post" id="contactForm" name="contact-form" data-toggle="validator">
+                      <!-- Name -->
+                      <div class="form-group label-floating">
+                        <label class="control-label" for="name"></label>
+                        <input class="form-control" id="name" type="text" name="name" required data-error="Please enter your name" placeholder="Ваше Имя">
+                        <div class="help-block with-errors"></div>
+                      </div>
+                      <!-- email -->
+                      <div class="form-group label-floating">
+                        <label class="control-label" for="email"></label>
+                        <input class="form-control" id="email" type="email" name="email" required data-error="Please enter your Email" placeholder="Ваш e-mail">
+                        <div class="help-block with-errors"></div>
+                      </div>
+                      <!-- Subject -->
+                      <div class="form-group label-floating">
+                        <label class="control-label"></label>
+                        <input class="form-control" id="msg_subject" type="text" name="phone" required data-error="Please enter your phone" placeholder="Контактный телефон">
+                        <div class="help-block with-errors"></div>
+                      </div>
+                      <!-- Message -->
+                      <div class="form-group label-floating">
+                          <label for="message" class="control-label"></label>
+                          <textarea class="form-control" rows="3" id="message" name="message" required data-error="Write your message" placeholder="Ваше сообщение"></textarea>
+                          <div class="help-block with-errors"></div>
+                      </div>
+				    <label class="container">Согласие на обработку персональных данных 
   									<input type="checkbox" checked="checked">
   									<span class="checkmark"></span>
-								</label>
-								<p>Стать волонтером</p>
-							</div>
+						</label>
+                      <!-- Form Submit -->
+                      <div class="form-submit mt-5 offset-xl-2 col-lg-9 offset-lg-2 col-xl-10 col-md-8 offset-md-1 col-9 offset-1">                          
+						  <button class="btn btn-danger btn-lg" type="submit" style="background: #E20613">Стать волонтером <img src="image/logo-bottom.png" align="right" ></button>
+
+                          <div id="msgSubmit" class="h3 text-center hidden"></div>
+                          <div class="clearfix"></div>
+                      </div>
+                  </form>
+              </div>												
+				</div>
 						</div>
 					</div>
 			</main>
 			<div class="col-md-4 col-lg-3">
         		<div class="row">
-				<aside class="col-sm-6 col-md-12">	
+				<aside class="col-md-12 col-sm-8 offset-sm-3 offset-xl-0 offset-lg-0 offset-md-0">	
 				<div class="recvit" >
 					<hr style="width: 70px; position: relative; left: -70px; background: #F4CE77; border-radius: 1px; ">
 					<h1 style="font-size: 25px">Реквизиты фонда</h1>
@@ -156,7 +185,7 @@
 					<br>1183600000924</p>
 					<p style="font-size: 12px; line-height: 16px">КПП: 
 					<br>366401001</p>
-					<p>скачать реквизиты</p>	
+					<a class="download_recvit" href="#"><button class="btn btn-outline-danger" type="submit" id="form-submit" ><i class="material-icons mdi mdi-message-outline"></i>скачать реквизиты</button></a>	
 				</div>
 			</aside>
 				<div class="row">
@@ -172,9 +201,9 @@
 	<div class="footer-classic context-dark bg-image" style="background: #F6F6F6; color:#4C4C4C">
         <div class="container-fluid">
           <div class="row row-40 ">
-            <div class="col-md-5 col-xl-5 offset-lg-0 col-lg-5">
+            <div class="col-xl-5 offset-lg-0 col-lg-5 offset-sm-3 col-sm-7 offset-md-0 col-md-6 col-10 offset-1">
               <div class="pr-xl-2"><a class="brand" href="index.html"><img class="brand-logo-light" src="image/logo-footer.png" alt="" style="position:relative; margin: 0px 15px; top:35px"></a>
-                <p><br><br><br></p>
+                <p class="offset-sm-0 col-sm-12"><br><br><br></p>
              
 				  <a class="rights" href="#" style="margin: 0 25px; font-size: 13px">Политика конфеденциальности</a><br>
 
@@ -201,7 +230,7 @@
 						<li><a href="#">Контакты</a></li>
 					</ul>
           </div>
-			  <div class="col-md-3 col-xl-3 col-lg-3">
+			  <div class="col-xl-4 col-lg-4 col-md-3">
 			  <p>+7 650 106 57 31</p>
 			  <p><i class="fa fa-map fa-2x" href="#"></i>г.Воронеж, Московский пр-т, 67 оф.307</p>
 				  <hr style="width: 150px; position: relative; background: #F4CE77; border-radius: 1px;">
@@ -212,13 +241,11 @@
 				   
 			  </div>
         </div>
-        <div class="row no-gutters social-container">
-          
-        </div>
+        
 	</div>
 	</div>
-	
-      </footer>
+	</div>
+		</footer>
 <br>
 	
 	
