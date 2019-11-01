@@ -3,6 +3,13 @@
 header, section, map, #MainMap, .brand-logo-light{
 	margin: 0 42px;
 }
+@media screen and (min-width: 1400px) {
+     html{
+       max-width: 1350px;
+		margin-left: auto;
+  		margin-right: auto;
+	}
+}
 
 bady{
 	font-family: Roboto;
@@ -195,8 +202,8 @@ aside{
 	
 }
 .img_aside img{
-	left: 32px;
-	top:-8px;
+	left: auto;
+	top:-5px;
 	
 }
 
@@ -224,7 +231,7 @@ aside{
 }
 
 .custom{
-	width:200px !important;
+	width:180px !important;
 	height: 36px;
 	margin-bottom: 6px;
 }
@@ -603,5 +610,11 @@ footer p{
 @media screen and (max-width: 901px) {
 	.call_p, .call_p2{
 		font-size: 17px;
+	}
+}
+@media screen and (min-width: 1300px){
+	.logo_forum {
+		height: auto;
+		width: auto;
 	}
 }
